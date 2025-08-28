@@ -5,6 +5,12 @@ body {
 a:link {
     color: #e78fb3;
 }
+a:hover {
+    color:#9656a1;
+}
+a:visited {
+    color:#fffffe
+}
 .resumeSections {
     display: flex;
     flex-direction: row;
@@ -92,4 +98,15 @@ progress {
   }
   progress::-moz-progress-bar {
     /* style rules */
+  }
+  @media (max-width: 900px) {
+    .resumeSections {
+        flex-direction: column;
+    }
+    .resumeSectionPast {
+        width: 80%;
+    }
+    .resumeSectionsAbout {
+        width: 80%;
+    }
   }
