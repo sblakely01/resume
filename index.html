@@ -1,12 +1,150 @@
+<!-- Resume Assignment
+HTML :
+Structure:
+basic index boilerplate
+<title> in the <head>
+Name as <h1>
+contact information
+<section> on about me
+skills listed using <ul> or <ol>
+experience should be in its own <section> with <h3> or similar and <p> describing said experience
+Education should be in its own <section> with <h3> or similar and <p> describing said experience
+HTML Requirements
+At least 3 headings (<h1>, <h2>, <h3>)
+At least 2 paragraphs (<p>)
+At least 1 list (<ul> or <ol>)
+At least 1 image (<img>)
+At least 1 link (<a>— could link to email, portfolio, wiki, website or fake LinkedIn)
+CSS:
+Basic Text Styling
+Change the font family
+Change the font size
+Change the text color
+Background styling
+Background color for the whole page/specific sections or add backgtround image
+Spacing
+Use margin and/or padding on at least 2 elements
+Borders
+Add a border around at least 1 section
+Image styling
+Change image size
+Optional: make it circular with border-radius
+Stretch Goals:
+use a hover effect on links
+Center the main heading with text-align
+Custom section layout using class or id
+Add a subtle text shadow
+Create a "Contact Me" button
+add an <hr>
+add a google font that you enjoy -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Stephanye Blakely Resume </title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Stephanye Blakely</h1>
+    <section class="resumeSections">
+        <section class="resumeSectionsAbout">
+            <section class="contactInfo">
+                <img src="2023-11-12-15-49-23-715.jpg" alt="Portfolio image of me" class="portfolioImage">
+                <h2><a href=mailto:"stephanye.blakely@gmail.com">stephanye.blakely@gmail.com</a></h2>
+                <h2>(626) 653-2241</h2>
+                <h2>Covina, CA 91724</h2>
+                <h2><a href="www.linkedin.com/in/stephanye-blakely">www.linkedin.com/in/stephanye-blakely</a></h2>
+                <h2><a href="https://github.com/sblakely01/">https://github.com/sblakely01/</a></h2>
+                <h2><a href="www.stephanyeblakely.com">www.stephanyeblakely.com</a></h2>
+            </section>
+            <section class="about">
+                <h2>Summary</h2>
+                <p>Software Development Engineer with 4+ years of experience in designing and building top-notch software solutions, with a strong focus on problem-solving and optimizing performance in fast-paced and collaborative environments. Skilled in full-stack development, API integration, AWS services and deploying scalable applications, with a track record of improving user experience and driving efficiency. Adept at collaborating with cross-functional teams to deliver high-quality, innovative software products that meet both technical and business needs. </p>
+            </section>
+            <section class="skills"> 
+                <h2>Skills</h2>
+                <ul>
+                    <li>Web and Mobile Application Design</li><progress value="75" max="100"></progress>
+                    <li>DevOps and Deployment Support</li><progress value="40" max="100"></progress>
+                    <li>Design and Integration of APIs and Web Services</li><progress value="75" max="100"></progress>
+                    <li>Technical Customer Support</li><progress value="50" max="100"></progress>
+                    <li>Development and Design in AWS Services</li><progress value="70" max="100"></progress>
+                    <li>CI/CD Design and Implementation</li><progress value="50" max="100"></progress>
+                </ul>
+            </section>
+        </section>
+        <section class="resumeSectionPast">
+                <section class="experience">
+                    <h2>Experience</h2>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <h3>Amazon AWS</h3>
+                            <h3>June 2022 - Sept 2023</h3>
+                        </div>
+                        <div class="cardBody">
+                            <h3>Software Development Engineer</h3>
+                            <p>Contributed to the development, optimization, and support of scalable cloud applications at Amazon AWS, leveraging a full stack of technologies including TypeScript, React Java, C#, GraphQL, AWS Lambda, Amazon Elastic Container Service, and AWS DynamoDB. Played a key role in enhancing user experience and operational efficiency by developing robust single-page applications and APIs.</p>
+                            <ul>
+                                <li>Worked closely with engineers, product managers, and other stakeholders to troubleshoot and resolve complex technical issues, ensuring seamless integration and functionality of cloud-based software applications.</li>
+                                <li>Actively participated in on-call support rotations, addressing Tier 1 and Tier 2 support tickets, troubleshooting customer issues with the team's services, and ensuring the quickest resolution to maximize customer satisfaction.</li>
+                            </ul>
+                            <p><span class="accomplishments">Key Accomplishments:</span> Spearheaded the end-to-end development of a cloud-based application, leveraging TypeScript, React, Java, and AWS to optimize onboarding flows and increase onboarding speed by 30% for customers.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <h3>American Express</h3>
+                            <h3>Oct 2021 - June 2022</h3>
+                        </div>
+                        <div class="cardBody">
+                            <h3>Back End Software Engineer</h3>
+                            <p>Contributed to the existing codebase to allo card journeys during automatic approvals to be more efficient and reliable across multiple international regions. Integrated API calls to both company internal services and third party applications to allow for fast credit card approvals.</p>
+                            <ul>
+                                <li>Developed and executed comprehensive test plans to identify and resolve card journeys and API issues resulting in a 20% decrease in related customer support tickets.</li>
+                                <li>Collaborated with cross-functional teams to design and implement automated testing frameworkd using JUnit, reducing testing time by 30%.</li>
+                            </ul>
+                            <p><span class="accomplishments">Key Accomplishments:</span> Lead an initiative to increase Unit Testing coverage from 60% to 100% and to design and build a ne system for Integration Testing for card journeys across multiple geographic regions.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="cardHeader">
+                            <h3>DentalHQ</h3>
+                            <h3>Jan 2021 - Sept 2022</h3>
+                        </div>
+                        <div class="cardBody">
+                            <h3>Software Engineer/Lead Support Engineer</h3>
+                            <p>Advanced from Software Engineer to Lead Support Engineer, playing a key role in developing and maintaining software solutions that enhanced operational efficiency and improved customer experience. Led initiatives to integrate scalable software solutions, resulting in a 30% increase in efficiency and significant cost savings.</p>
+                            <ul>
+                                <li>Successfully transitioned from Software Engineer to Lead Support Engineer role by demonstrating technical expertise and exceptional customer service skills, handling 40+ dailt customer inquiries for technical and non-technical issues via Salesforce and Slack.</li>
+                                <li>Researched, developed, and implemented a solution for tracking KPIs and performing statistical analysis, which was displayed on the customer dashboard, helping to increase patient enrollment by 21%.</li>
+                            </ul>
+                            <p><span class="accomplishments">Key Accomplishments:</span> Lead a database optimization project that improved query performance, enhancing the user experience and operational reliability of company systems. Developed a robust software solution that optimized internal processes, reducing manual work and generating substantial cost savings.</p>
+                        </div>
+                    </div>
+                </section>
+                <section class="education">
+                    <h2>Education</h2>
+                    <div class="cardHeader">
+                        <h3>Hack Reactor</h3>
+                        <h3>May 2020 - Sept 2020</h3>
+                    </div>
+                    <div class="cardBody">
+                        <h3>Software Engineering Immersive</h3>
+                        <p>Successfully completed over 700 hours of software engineering bootcamp focused on full stack engineering and design, React, Javascript, databases, and advanced algorithms.</p>
+                    </div>
+                    <div class="cardHeader">
+                        <h3>University of Louisville</h3>
+                        <h3>Jan 2016 - Dec 2019</h3>
+                    </div>
+                    <div class="cardBody">
+                        <h3>Computer Engineering and Computer Science</h3>
+                        <p>Completed over 85 credit hours towards a bachelor's degree at J.B. Speed School of Engineering, with a 3.4 GPA. Completed courses include Java, C and C++, Algorithms, and Introduction to Object Oriented Programming, as well as Engineering Calculus.</p>
+                    </div>
+                </section>
+            </section>
+    </section>
 </body>
 </html>
+

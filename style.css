@@ -1,0 +1,95 @@
+body {
+    background-color: #271c19;
+    color: #fff3ec;
+}
+a:link {
+    color: #e78fb3;
+}
+.resumeSections {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+}
+h1 {
+    justify-self: center;
+    color: #fffffe;
+    font-size: 5rem;
+    text-shadow:
+            -1px -1px 0 #e78fb3,
+            1px -1px 0 #e78fb3,
+            -1px 1px 0 #e78fb3,
+            1px 1px 0 #e78fb3; /* Creates a 1px black outline */
+}
+h2 {
+    color: #9656a1;
+}
+h3 {
+    color: #ffc0ad;
+}
+.resumeSectionsAbout {
+    width: 30%;   
+    background-color: #55423d;
+    margin: 30px;
+    padding: 15px;
+    filter: drop-shadow(5px 5px 15px #ffc0ad);
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 3rem;
+
+}
+.resumeSectionPast {
+    width: 40%;
+    background-color: #55423d;
+    margin: 30px;
+    padding: 15px;
+    filter: drop-shadow(5px 5px 15px #ffc0ad);
+    border-radius: 3rem;
+}
+.portfolioImage {
+    width: 200px;
+    margin: 20px;
+    align-self: center;
+}
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    font-size: .9rem;
+    align-items: center;
+    justify-items: center;
+    justify-self: center;
+}
+.cardHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.accomplishments {
+    font-style: italic;
+}
+progress {
+    border-radius: 2px; 
+    width: 50%;
+    height: 8px;
+    margin-top: -30%;
+    margin-bottom: 8px;
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+  }
+  progress::-webkit-progress-bar {
+    background-color: #271c19;
+    border-radius: 2px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #9656a1;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px 3px #ffc0ad;
+  }
+  progress::-moz-progress-bar {
+    /* style rules */
+  }
